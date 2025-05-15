@@ -183,6 +183,7 @@
     documentos: "url('assets/img/fondo-documentos.jpg')"
   };
 
+  // Crear el observer
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -196,7 +197,8 @@
       });
     },
     {
-      threshold: 0.4
+      threshold: 0.2, // Activación más temprana
+      rootMargin: '0px 0px -40% 0px' // Adelanta el momento del cambio
     }
   );
 
@@ -204,7 +206,15 @@
     const section = document.getElementById(id);
     if (section) observer.observe(section);
   });
+
+  // Precargar todas las imágenes
+  const imagenes = Object.values(secciones).map(f => f.match(/url\(['"]?(.*?)['"]?\)/)[1]);
+  imagenes.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
 </script>
+
 
   
 <script>
@@ -218,19 +228,7 @@
   });
 </script>
 
-<script>
-  const imagenes = [
-    'assets/img/fondo-bienestar.jpg',
-    'assets/img/fondo-importancia.jpg',
-    'assets/img/fondo-video.jpg',
-    'assets/img/fondo-documentos.jpg'
-  ];
 
-  imagenes.forEach(src => {
-    const img = new Image();
-    img.src = src;
-  });
-</script>
   
 
 </body>
