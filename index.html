@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Tigre y su Bienestar</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header>
+    <h1>El Tigre y su Bienestar</h1>
+    <nav>
+      <ul>
+        <li><a href="#bienestar">Bienestar</a></li>
+        <li><a href="#importancia">Importancia</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#documentos">Documentos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienestar">
+      <h2>¿Qué es el bienestar animal?</h2>
+      <p>
+        El bienestar animal se refiere al estado físico y mental de un animal en relación con las condiciones en las que vive y muere. Implica garantizar que los animales vivan sin sufrimiento innecesario y puedan expresar comportamientos naturales propios de su especie.
+      </p>
+    
+      <p>
+        Para evaluar el bienestar se consideran las <strong>cinco libertades fundamentales</strong>:
+      </p>
+    
+      <ul class="libertades">
+        <li><strong>Libre de hambre y sed:</strong> acceso a agua fresca y una dieta adecuada.</li>
+        <li><strong>Libre de incomodidad:</strong> ambiente apropiado con refugio y área de descanso.</li>
+        <li><strong>Libre de dolor, lesiones y enfermedades:</strong> prevención y tratamiento adecuados.</li>
+        <li><strong>Libre para expresar un comportamiento natural:</strong> espacio suficiente, instalaciones adecuadas y compañía de su especie.</li>
+        <li><strong>Libre de miedo y angustia:</strong> condiciones que eviten el sufrimiento mental.</li>
+      </ul>
+    </section>
+
+    <section id="importancia">
+      <h2>Importancia del Tigre</h2>
+      
+      <p>
+        El tigre es un <strong>depredador tope</strong>, es decir, se encuentra en la cima de la cadena alimentaria. Su rol es crucial, ya que regula las poblaciones de herbívoros como ciervos y jabalíes, evitando el sobrepastoreo y ayudando a mantener el <strong>equilibrio ecológico</strong> en los bosques donde habita.
+      </p>
+    
+      <p>
+        Además, el tigre es considerado una <strong>especie paraguas</strong>: al proteger su hábitat, se benefician muchas otras especies de flora y fauna que comparten su entorno. Por eso, conservar al tigre es una estrategia clave para preservar ecosistemas completos.
+      </p>
+    
+      <div class="video-container">
+        <video controls>
+          <source src="assets/video/bienestar.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+    
+
+    <section id="video">
+      <h2>Galería de videos Jaime Duque</h2>
+    
+      <div class="video-grid">
+        <video class="video-thumb" src="assets/video/bienestar1.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar2.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar3.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar4.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar5.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar6.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar7.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar8.mp4" muted></video>
+        <video class="video-thumb" src="assets/video/bienestar9.mp4" muted></video>
+      </div>
+    
+      <!-- Modal (pantalla grande al hacer clic) -->
+      <div id="video-modal" class="modal hidden">
+        <span class="close-btn" onclick="cerrarModal()">✖</span>
+        <video id="video-ampliado" controls></video>
+      </div>
+    </section>
+    
+
+    <section id="documentos">
+      <h2>Documentos informativos</h2>
+
+      <div class="documento">
+        <h3>🐯 Bienestar de Tigres en Cautiverio</h3>
+        <p>
+          Este estudio analiza el estado de bienestar de dos tigres en el <strong>Parque Jaime Duque</strong>, con especial atención a un macho que presenta signos de estrés como <em>movimientos repetitivos</em>. Mediante observación directa, entrevistas a profesionales y revisión científica, se evaluaron los cinco dominios del bienestar animal: nutrición, ambiente, salud, comportamiento y estado mental.
+        </p>
+        <p>
+          Se identificaron deficiencias como <strong>entornos de concreto</strong>, <strong>escasa vegetación</strong> y <strong>una piscina reducida</strong>, lo que impide la expresión de comportamientos naturales como nadar o explorar. Estas condiciones afectan tanto la salud física como emocional del tigre.
+        </p>
+        <p>
+          Entre las recomendaciones clave se incluyen: <strong>ampliar la piscina</strong>, <strong>añadir enriquecimiento ambiental</strong>, realizar <strong>controles veterinarios periódicos</strong>, y <strong>capacitar al personal</strong> en manejo de bienestar animal. También se sugiere <strong>fortalecer la educación ambiental</strong> para los visitantes.
+        </p>
+        <p>
+          En conclusión, el estudio destaca la importancia de crear recintos más naturalistas y estimulantes para garantizar el bienestar de los tigres en cautiverio.
+        </p>
+            
+            Además, se habla de la necesidad de involucrar a las comunidades locales, ya que ellas conviven directamente con los tigres y pueden ser aliadas clave en su protección. También se destaca el papel de las organizaciones internacionales y ONGs en el financiamiento, monitoreo y concientización sobre la conservación del tigre.</p>
+        <a href="assets/docs/amenaza-tigre.docx" download="">📄 Ver documento</a>
+      </div>
+
+      <div class="documento">
+        <h3>🧘‍♂️Conservación del Tigre</h3>
+        <p>
+          La conservación del tigre enfrenta el desafío de proteger a esta especie en peligro, mientras se busca la coexistencia pacífica con las comunidades humanas. En países como India, Nepal o Bután, las poblaciones de tigres han aumentado gracias a programas de conservación como <strong>TX2</strong> y la <strong>Iniciativa Global del Tigre</strong>, que buscan duplicar el número de tigres en estado salvaje.
+        </p>
+        <p>
+          Sin embargo, la <strong>pérdida y fragmentación del hábitat</strong>, la <strong>caza furtiva</strong> y los <strong>conflictos humano-tigre</strong> siguen siendo amenazas graves. Estas condiciones provocan estrés en los animales y aumentan el riesgo de enfrentamientos con humanos, afectando su comportamiento y bienestar.
+        </p>
+        <p>
+          Los esfuerzos de conservación incluyen la creación de <strong>áreas protegidas</strong>, el rastreo de tigres, la educación a las comunidades locales y programas de compensación para quienes sufren pérdidas por la presencia de tigres. También se promueven estrategias para restaurar hábitats y mejorar la conectividad entre ellos.
+        </p>
+        <p>
+          Finalmente, el documento destaca que la conservación del tigre no es solo una cuestión ambiental, sino también social, económica y cultural. Proteger a los tigres implica <strong>trabajar con las personas, no contra ellas</strong>, y desarrollar soluciones sostenibles que beneficien tanto a la fauna como a las comunidades humanas.
+        </p>
+            
+            Finalmente, se advierte sobre la falta de recursos y de compromiso político en algunos países, lo que debilita los programas de conservación y vigilancia.</p>
+        <a href="assets/docs/conservacion-tigre.docx" target="_blank">📄 Ver documento</a>
+      </div>
+
+      <div class="documento">
+        <h3>Amenaza de los tigres</h3>
+        <p>
+          El bienestar del tigre está gravemente amenazado por la <strong>destrucción de su hábitat</strong>, la <strong>caza furtiva</strong> y los <strong>conflictos con humanos</strong>. Estas condiciones obligan a los tigres a vivir en espacios reducidos o artificiales, lo que genera <strong>estrés</strong> y limita su comportamiento natural. Además, en cautiverio, la falta de entornos adecuados y estímulos puede afectar su salud física y mental.
+        </p>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Proyecto Educativo – Bienestar Animal</p>
+  </footer>
+
+  <script>
+    const miniaturas = document.querySelectorAll(".video-thumb");
+    const modal = document.getElementById("video-modal");
+    const videoAmpliado = document.getElementById("video-ampliado");
+  
+    miniaturas.forEach(video => {
+      video.addEventListener("click", () => {
+        // 🔇 Pausar SOLO la miniatura que fue clicada
+        video.pause();
+        video.currentTime = 0;
+  
+        // 👉 Mostrar el modal y cargar ese video
+        modal.classList.remove("hidden");
+        videoAmpliado.src = video.src;
+  
+        // ▶️ Reproducir en modal
+        setTimeout(() => {
+          videoAmpliado.play();
+        }, 100);
+      });
+    });
+  
+    function cerrarModal() {
+      modal.classList.add("hidden");
+      videoAmpliado.pause();
+      videoAmpliado.currentTime = 0;
+      videoAmpliado.src = ""; // Limpia el video activo sin recargar miniaturas
+    }
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>
+
+
