@@ -6,7 +6,11 @@
   <title>El Tigre y su Bienestar</title>
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
+
+
+
 <body>
+<div id="background"></div>
 
   <header>
     <h1>El Tigre y su Bienestar</h1>
@@ -169,8 +173,51 @@
   </script>
   
   
+ <script>
+  const fondo = document.getElementById("background");
+
+  const secciones = {
+    bienestar: "url('assets/img/fondo-bienestar.jpg')",
+    importancia: "url('assets/img/fondo-importancia.jpg')",
+    video: "url('assets/img/fondo-video.jpg')",
+    documentos: "url('assets/img/fondo-documentos.jpg')"
+  };
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          if (secciones[id]) {
+            const nuevaFondo = `linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), ${secciones[id]}`;
+            fondo.style.backgroundImage = nuevaFondo;
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.4
+    }
+  );
+
+  Object.keys(secciones).forEach(id => {
+    const section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+</script>
+
   
-  
+<script>
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+    document.body.classList.add('scrolling');
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      document.body.classList.remove('scrolling');
+    }, 300);
+  });
+</script>
+
   
 </body>
 </html>
